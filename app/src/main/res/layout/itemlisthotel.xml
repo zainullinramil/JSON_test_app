@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvName"
+        android:textSize="17dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvAddr"
+        android:textSize="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/tvName"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_alignStart="@+id/tvName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvIDHotel"
+        android:textSize="10dp"
+        android:layout_alignTop="@+id/tvName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvDist"
+        android:textSize="11dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/tvSav"
+        android:layout_alignLeft="@+id/tvSav"
+        android:layout_alignStart="@+id/tvSav"/>
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/tvSav"
+        android:textSize="11dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/tvAddr"
+        android:layout_alignLeft="@+id/tvAddr"
+        android:layout_alignStart="@+id/tvAddr"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tvDist"
+        android:layout_alignTop="@+id/tvAddr"
+        android:layout_alignBottom="@+id/tvDist"
+        android:id="@+id/linearLayout"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageStar"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_star"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="New Text"
+            android:id="@+id/tvStar"/>
+    </LinearLayout>
+
+</RelativeLayout>

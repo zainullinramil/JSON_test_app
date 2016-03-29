@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tviName"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        tools:text="New Text"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/tviAddr"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/tviName"
+        android:layout_alignLeft="@+id/tviName"
+        android:layout_alignStart="@+id/tviName"
+        tools:text="New Text"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/tviIDHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tviName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        tools:text="New Text"
+        android:textSize="10sp"
+        />
+
+    <TextView
+        android:id="@+id/tviDist"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/tviSav"
+        android:layout_alignLeft="@+id/tviSav"
+        android:layout_alignStart="@+id/tviSav"
+        tools:text="New Text"
+        android:textSize="11sp"/>
+    <TextView
+        android:id="@+id/tviSav"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_below="@+id/tviAddr"
+        android:layout_alignLeft="@+id/tviAddr"
+        android:layout_alignStart="@+id/tviAddr"
+        tools:text="New Text"
+        android:textSize="11sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/tviDist"
+        android:layout_alignTop="@+id/tviAddr"
+        android:layout_alignBottom="@+id/tviDist"
+        android:layout_toRightOf="@+id/tviDist"
+        >
+
+        <ImageView
+            android:id="@+id/imageStar"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_star"
+            />
+
+        <TextView
+            android:id="@+id/tviStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="New Text"
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prBarImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:layout_alignBottom="@+id/ivHotel"
+        android:layout_centerHorizontal="true"
+        android:indeterminateDrawable="@drawable/blue_png"
+        />
+
+    <ImageView
+        android:id="@+id/ivHotel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tviDist"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnMap"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/tviLan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            tools:text="New Text"
+            />
+
+        <TextView
+            android:id="@+id/tviLon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            tools:text="New Text"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnmap_text"
+        android:layout_below="@+id/ivHotel"
+        android:layout_alignRight="@+id/tviIDHotel"
+        android:layout_alignEnd="@+id/tviIDHotel"
+        />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">JSON_test</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="loadtext">Загрузка данных</string>
+    <string name="nodata">Нет данных</string>
+    <string name="btnmap_text">Посмотреть на карте</string>
+    <string name="no_connect_text">Нет подключения к сети</string>
+    <string name="free_room_text">" свободный номер: "</string>
+    <string name="free_rooms_text">" свободных номера: "</string>
+    <string name="free_roomss_text">" свободных номеров: "</string>
+    <string name="id_item_text">"ID: "</string>
+    <string name="tothecenter_text">"До центра города: "</string>
+    <string name="dist_text">" pc"</string>
+    <string-array name="saSortHotel">
+        <item>Сортировать по:</item>
+        <item>Удаленность от центра</item>
+        <item>Свободных номеров</item>
+    </string-array>
+</resources>
